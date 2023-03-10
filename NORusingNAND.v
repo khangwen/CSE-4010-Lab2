@@ -14,10 +14,10 @@ module NORusingNAND (A, B, Q); // creates functionality of NOR gate using only N
 
     wire C, D, E, F; // output wires used to make new NOR gates
 
-    NANDgate u1(A, A, C); // use NORgate to output to C
-    NANDgate u2(B, B, D); // use NORgate to output to D
-    NANDgate u3(C, D, E); // use NORgate to output to E
-    NANDgate u4(E, E, F); // use NORgate to output to F
+    NANDgate u1(A, A, C); // use NANDgate to output to C
+    NANDgate u2(B, B, D); // use NANDgate to output to D
+    NANDgate u3(C, D, E); // use NANDgate to output to E
+    NANDgate u4(E, E, F); // use NANDgate to output to F
 
     assign Q = F; // Q equals final output
 
